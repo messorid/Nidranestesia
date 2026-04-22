@@ -6,7 +6,7 @@ import ScrollReveal from "../components/ScrollReveal";
 export const metadata = {
   title: "Nosotros | Nidra Servicios Anestésicos — Barinas",
   description:
-    "Conoce al equipo de Nidra: anestesiólogos certificados comprometidos con la seguridad y el bienestar del paciente en Barinas, Venezuela.",
+    "Conoce al equipo de Nidra: Dra. Julianne Vivas y Dra. Yermaly Villamizar, anestesiólogas egresadas de la ULA comprometidas con la seguridad y el bienestar del paciente en Barinas.",
 };
 
 const values = [
@@ -25,6 +25,49 @@ const reasons = [
   { icon: "📱", title: "Comunicación directa", desc: "Acceso directo al anestesiólogo antes, durante y después del procedimiento. Sin intermediarios ni demoras." },
   { icon: "🕐", title: "Disponibilidad 24/7", desc: "Atención para procedimientos programados y urgencias las 24 horas, los 7 días de la semana." },
   { icon: "🏥", title: "Cobertura en Barinas", desc: "Presencia en las principales clínicas, hospitales y centros médicos del estado Barinas." },
+];
+
+const timeline = [
+  {
+    label: "Pregrado",
+    title: "Medicina",
+    desc: "Universidad de Los Andes — Formación médica integral con sólida base clínica y científica.",
+  },
+  {
+    label: "Postgrado",
+    title: "Especialización en Anestesiología",
+    desc: "Formación académica y práctica en anestesia general y regional.",
+  },
+  {
+    label: "Formación avanzada",
+    title: "Técnicas especializadas",
+    desc: "Manejo avanzado de vía aérea, sedación dentro y fuera de quirófano, y protocolos de analgesia postoperatoria.",
+  },
+  {
+    label: "Hoy",
+    title: "Nidra Servicios Anestésicos",
+    desc: "Co-fundadora y anestesióloga principal. Atención humanizada y de alto nivel en Barinas.",
+    highlight: true,
+  },
+];
+
+const doctors = [
+  {
+    name: "Dra. Julianne Vivas",
+    initials: "JV",
+    color: "from-blue-600/20 to-blue-400/5",
+    borderColor: "border-blue-500/30",
+    dotColor: "bg-blue-400",
+    accentColor: "text-blue-300",
+  },
+  {
+    name: "Dra. Yermaly Villamizar",
+    initials: "YV",
+    color: "from-indigo-600/20 to-indigo-400/5",
+    borderColor: "border-indigo-500/30",
+    dotColor: "bg-indigo-400",
+    accentColor: "text-indigo-300",
+  },
 ];
 
 export default function NosotrosPage() {
@@ -53,30 +96,28 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      {/* Misión + Visión */}
+      {/* Sobre Nidra */}
       <section className="bg-[#030C18] py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <ScrollReveal>
               <div className="flex flex-col gap-6">
-                <span className="text-[10px] tracking-[0.3em] uppercase text-blue-400 font-medium">Nuestra historia</span>
+                <span className="text-[10px] tracking-[0.3em] uppercase text-blue-400 font-medium">Sobre Nidra</span>
                 <h2 className="font-display text-3xl lg:text-4xl font-light text-white leading-snug">
-                  Nidra nació para elevar el{" "}
-                  <span className="font-semibold text-blue-300">estándar anestésico</span>{" "}
-                  en Barinas
+                  Mejorando la experiencia del{" "}
+                  <span className="font-semibold text-blue-300">paciente</span>{" "}
+                  en cada etapa
                 </h2>
                 <p className="text-slate-400 text-sm lg:text-base leading-relaxed">
-                  Nidra Servicios Anestésicos surge de la convicción de que cada paciente
-                  en Barinas merece acceso a anestesiología de la más alta calidad.
-                  Fundado por anestesiólogos con formación especializada y años de
-                  experiencia clínica, nuestro equipo trabaja para que la anestesia
-                  deje de ser una fuente de temor y se convierta en una garantía de seguridad.
+                  NIDRA busca mejorar la experiencia de los pacientes durante la realización
+                  de procedimientos fuera de quirófano y aportar bienestar en otros momentos
+                  vulnerables como lo son la preparación preoperatoria y el manejo del dolor
+                  postoperatorio.
                 </p>
                 <p className="text-slate-400 text-sm lg:text-base leading-relaxed">
-                  Trabajamos de forma independiente y coordinada con clínicas, hospitales
-                  y centros médicos de la región, ofreciendo una atención personalizada
-                  que pone al paciente en el centro de cada decisión clínica.
+                  Aplicamos conocimientos actualizados, bajo los más altos estándares de
+                  seguridad y atención humanizada en cada uno de nuestros servicios.
                 </p>
               </div>
             </ScrollReveal>
@@ -135,8 +176,92 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      {/* Values */}
+      {/* Equipo */}
       <section className="py-24 lg:py-32 border-t border-white/5" style={{ background: "#050F1D" }}>
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <ScrollReveal>
+            <div className="flex flex-col items-center text-center gap-4 mb-16">
+              <span className="text-[10px] tracking-[0.3em] uppercase text-blue-400 font-medium">Las responsables de Nidra</span>
+              <h2 className="font-display text-4xl lg:text-5xl font-light text-white">
+                Nuestro <span className="font-semibold italic text-blue-300">Equipo</span>
+              </h2>
+              <p className="text-slate-500 text-sm max-w-xl leading-relaxed">
+                Dos especialistas formadas en la Universidad de Los Andes, unidas por la misma
+                visión: elevar el estándar de la anestesiología en Barinas.
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid lg:grid-cols-2 gap-8">
+            {doctors.map(({ name, initials, color, borderColor, dotColor, accentColor }, di) => (
+              <ScrollReveal key={name} delay={di * 120}>
+                <div
+                  className={`flex flex-col rounded-3xl border ${borderColor} overflow-hidden h-full`}
+                  style={{ background: "rgba(255,255,255,0.02)" }}
+                >
+                  {/* Card header */}
+                  <div className={`relative flex items-center gap-5 p-8 bg-gradient-to-br ${color}`}>
+                    <div
+                      className={`w-16 h-16 rounded-2xl border ${borderColor} flex items-center justify-center flex-shrink-0`}
+                      style={{ background: "rgba(255,255,255,0.06)" }}
+                    >
+                      <span className="font-display text-2xl font-semibold text-white/80">{initials}</span>
+                    </div>
+                    <div className="flex flex-col gap-1">
+                      <h3 className="font-display text-xl lg:text-2xl font-semibold text-white">{name}</h3>
+                      <span className={`text-[10px] tracking-[0.2em] uppercase ${accentColor} font-medium`}>
+                        Médico Anestesiólogo · Co-fundadora
+                      </span>
+                    </div>
+                    <div className="absolute top-4 right-6 text-[9px] tracking-[0.2em] uppercase text-white/20 font-medium">
+                      Barinas · Venezuela
+                    </div>
+                  </div>
+
+                  {/* Descripción */}
+                  <div className="px-8 pt-6 pb-2">
+                    <p className="text-slate-400 text-sm leading-relaxed">
+                      Comprometida con el trato humanizado al paciente, la actualización
+                      médica continua y el trabajo multidisciplinario.
+                    </p>
+                  </div>
+
+                  {/* Timeline */}
+                  <div className="flex flex-col px-8 py-6 gap-0">
+                    {timeline.map(({ label, title, desc, highlight }, ti) => (
+                      <div key={label} className="flex gap-4 relative">
+                        {/* Línea vertical */}
+                        <div className="flex flex-col items-center flex-shrink-0">
+                          <div
+                            className={`w-2.5 h-2.5 rounded-full mt-1 flex-shrink-0 ${highlight ? dotColor : "bg-white/20"} ring-2 ${highlight ? "ring-blue-400/20" : "ring-transparent"}`}
+                          />
+                          {ti < timeline.length - 1 && (
+                            <div className="w-px flex-1 mt-1 mb-1 bg-white/8" style={{ minHeight: "28px" }} />
+                          )}
+                        </div>
+
+                        {/* Contenido */}
+                        <div className={`flex flex-col gap-0.5 pb-5 ${ti === timeline.length - 1 ? "pb-0" : ""}`}>
+                          <span className={`text-[9px] tracking-[0.2em] uppercase font-medium ${highlight ? accentColor : "text-slate-500"}`}>
+                            {label}
+                          </span>
+                          <span className={`text-sm font-semibold ${highlight ? "text-white" : "text-white/75"}`}>
+                            {title}
+                          </span>
+                          <p className="text-slate-500 text-xs leading-relaxed mt-0.5">{desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="py-24 lg:py-32 border-t border-white/5" style={{ background: "#030C18" }}>
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <ScrollReveal>
             <div className="flex flex-col items-center text-center gap-4 mb-16">
@@ -165,7 +290,7 @@ export default function NosotrosPage() {
       </section>
 
       {/* Why us */}
-      <section className="py-24 lg:py-32 border-t border-white/5 bg-[#030C18]">
+      <section className="py-24 lg:py-32 border-t border-white/5" style={{ background: "#050F1D" }}>
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <ScrollReveal>
             <div className="flex flex-col items-center text-center gap-4 mb-16">
