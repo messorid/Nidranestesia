@@ -26,7 +26,7 @@ export default function Hero() {
       <div className="relative w-full max-w-7xl mx-auto px-6 lg:px-12 pt-32 pb-20 grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
 
         {/* Left: Text */}
-        <div className="flex flex-col gap-8 lg:gap-10">
+        <div className="flex flex-col gap-8 lg:gap-10 items-center lg:items-start text-center lg:text-left">
           <div className="flex items-center gap-3">
             <span className="w-6 h-px bg-blue-500" />
             <span className="w-2 h-px bg-blue-500/40" />
@@ -37,7 +37,7 @@ export default function Hero() {
 
           <div className="space-y-4">
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-light text-white leading-[1.1] tracking-tight">
-              Anestesia
+              Tranquilidad
               <br />
               <em
                 className="not-italic font-semibold"
@@ -48,17 +48,17 @@ export default function Hero() {
                   backgroundClip: "text",
                 }}
               >
-                de Precisión
+                en cada procedimiento
               </em>
             </h1>
-            <p className="text-slate-400 text-base lg:text-lg leading-relaxed max-w-xl">
+            <p className="text-slate-400 text-base lg:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
               Servicios anestésicos de alto nivel para procedimientos médicos.
               Seguridad, confort y profesionalismo en cada etapa.
             </p>
           </div>
 
           {/* Mobile image */}
-          <div className="relative lg:hidden h-64 rounded-2xl overflow-hidden border border-white/10">
+          <div className="relative lg:hidden h-64 w-full rounded-2xl overflow-hidden border border-white/10">
             <Image
               src="/hero.png"
               alt="Nidra Servicios Anestésicos"
@@ -70,7 +70,7 @@ export default function Hero() {
             <div className="absolute bottom-0 inset-x-0 h-20 bg-gradient-to-t from-[#071424] to-transparent" />
           </div>
 
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
             <a
               href="/contacto"
               className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm tracking-wide px-7 py-3.5 rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20 hover:-translate-y-0.5"
@@ -93,13 +93,13 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="flex gap-8 pt-6 border-t border-white/10">
+          <div className="flex justify-center lg:justify-start gap-8 pt-6 border-t border-white/10 w-full">
             {[
               { n: "3", label: "Especialidades anestésicas" },
               { n: "Barinas", label: "Cobertura en el estado" },
               { n: "24/7", label: "Disponibilidad" },
             ].map(({ n, label }) => (
-              <div key={label} className="flex flex-col gap-0.5">
+              <div key={label} className="flex flex-col items-center lg:items-start gap-0.5">
                 <span className="font-display text-2xl font-bold text-white">{n}</span>
                 <span className="text-[10px] text-slate-500 uppercase tracking-widest">{label}</span>
               </div>

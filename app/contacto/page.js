@@ -40,7 +40,7 @@ export default function ContactPage() {
 
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
             <div className="flex flex-col gap-4 max-w-xl">
-              <h1 className="font-display text-5xl lg:text-6xl font-light text-white leading-tight">
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-tight">
                 Estamos{" "}
                 <em
                   className="not-italic font-semibold"
@@ -54,7 +54,7 @@ export default function ContactPage() {
                   para ayudarle
                 </em>
               </h1>
-              <p className="text-slate-300 text-base lg:text-lg leading-relaxed">
+              <p className="text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed">
                 Comuníquese con nosotros para coordinar su valoración, agendar
                 un procedimiento o resolver cualquier duda.
               </p>
@@ -65,7 +65,7 @@ export default function ContactPage() {
               href={`https://wa.me/584245567249?text=${encodeURIComponent("Hola, los contacto desde la página de Contacto en nidranestesia.com. Quisiera coordinar una cita.")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-4 bg-green-500 hover:bg-green-400 text-white px-7 py-4 rounded-2xl transition-all duration-300 hover:shadow-2xl hover:shadow-green-500/30 hover:-translate-y-1 w-fit flex-shrink-0"
+              className="group flex items-center gap-4 bg-green-500 hover:bg-green-400 text-white px-6 py-4 rounded-2xl transition-all duration-300 hover:shadow-2xl hover:shadow-green-500/30 hover:-translate-y-1 w-full sm:w-fit flex-shrink-0"
             >
               <div className="relative">
                 <span className="absolute inset-0 rounded-full bg-white/20 animate-ping" />
@@ -88,14 +88,14 @@ export default function ContactPage() {
       {/* Info strip */}
       <div className="border-y border-white/5" style={{ background: "linear-gradient(90deg, #071424, #0B1E36, #071424)" }}>
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-white/5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 divide-white/5 lg:divide-x lg:divide-y-0">
             {[
               { icon: <PhoneIcon />, label: "Teléfono", value: "0424-556 7249", href: "tel:+584245567249" },
               { icon: <EmailIcon />, label: "Correo", value: "nidranestesiabns@gmail.com", href: "mailto:nidranestesiabns@gmail.com" },
               { icon: <LocationIcon />, label: "Ubicación", value: "Barinas, Venezuela", href: null },
               { icon: <ClockIcon />, label: "Disponibilidad", value: "24 horas · 7 días", href: null },
             ].map(({ icon, label, value, href }) => (
-              <div key={label} className="flex items-center gap-3 px-6 py-5">
+              <div key={label} className="flex items-center gap-3 px-4 py-4 sm:px-6 sm:py-5">
                 <div className="text-blue-400 flex-shrink-0">{icon}</div>
                 <div className="flex flex-col min-w-0">
                   <span className="text-[9px] tracking-[0.2em] uppercase text-slate-500">{label}</span>
@@ -155,7 +155,7 @@ export default function ContactPage() {
 
               {/* Servicios rápidos */}
               <div
-                className="flex flex-col gap-3 p-5 rounded-2xl border border-white/8"
+                className="flex flex-col gap-3 p-5 rounded-2xl border border-white/10"
                 style={{ background: "rgba(255,255,255,0.02)" }}
               >
                 <p className="text-[10px] tracking-[0.2em] uppercase text-slate-500 font-medium">Consultar sobre</p>
@@ -197,7 +197,7 @@ export default function ContactPage() {
             {/* Right: form */}
             <div className="lg:col-span-3">
               <div
-                className="p-8 lg:p-10 rounded-3xl border border-white/10"
+                className="p-5 sm:p-8 lg:p-10 rounded-3xl border border-white/10"
                 style={{ background: "linear-gradient(160deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%)" }}
               >
                 <div className="flex flex-col gap-1.5 mb-8">
