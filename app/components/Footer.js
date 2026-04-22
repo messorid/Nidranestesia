@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="relative w-10 h-10">
                 <Image
-                  src="/assets/nidra-icon.png"
+                  src="/assets/logosinfondo.png"
                   alt="Nidra"
                   fill
                   className="object-contain"

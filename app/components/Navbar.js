@@ -60,8 +60,8 @@ export default function Navbar() {
 
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 flex-shrink-0">
-            <div className="relative w-11 h-11">
-              <Image src="/assets/nidra-icon.png" alt="Nidra" fill className="object-contain" />
+            <div className="relative w-16 h-16">
+              <Image src="/assets/logosinfondo.png" alt="Nidra" fill className="object-contain" />
             </div>
             <div className="flex flex-col leading-none">
               <span className="font-display text-xl font-semibold tracking-[0.25em] text-white">NIDRA</span>
