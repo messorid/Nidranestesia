@@ -60,7 +60,7 @@ export default function Hero() {
           {/* Mobile image */}
           <div className="relative lg:hidden h-64 w-full rounded-2xl overflow-hidden border border-white/10">
             <Image
-              src="/hero.png"
+              src="/julinidra.jpeg"
               alt="Nidra Servicios Anestésicos"
               fill
               className="object-cover object-center"
@@ -123,7 +123,7 @@ export default function Hero() {
             {/* Photo */}
             <div className="relative h-[600px] rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/40">
               <Image
-                src="/hero.png"
+                src="/julinidra.jpeg"
                 alt="Nidra — Anestesióloga administrando anestesia"
                 fill
                 className="object-cover object-center"
