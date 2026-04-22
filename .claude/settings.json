@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --js --app --tailwind --eslint --no-src-dir --import-alias \"@/*\" --no-turbopack --yes)",
+      "Bash(mkdir -p /tmp/nidra_temp)",
+      "Bash(mv \"Diseño sin título_20260405_203635_0000.png\" /tmp/nidra_temp/)",
+      "Bash(mv \"Diseño sin título_20260405_204156_0000.png\" /tmp/nidra_temp/)"
+    ]
+  }
+}
