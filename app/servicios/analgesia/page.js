@@ -26,15 +26,15 @@ const techniques = [
   },
   {
     title: "Analgesia Multimodal",
-    desc: "Combinación de diferentes tipos de analgésicos (antiinflamatorios, paracetamol, opioides, coadyuvantes) que actúan en distintos puntos del proceso del dolor, logrando mayor eficacia con menor dosis de cada uno.",
-    tags: ["AINEs", "Paracetamol IV", "Gabapentinoides", "Menor consumo de opioides"],
+    desc: "Combinación de diferentes tipos de analgésicos que actúan en distintos puntos del proceso del dolor, logrando mayor eficacia con un plan individualizado para cada paciente.",
+    tags: ["AINEs", "Paracetamol IV", "Gabapentinoides", "Plan individualizado"],
   },
 ];
 
 const benefits = [
   "Reducción significativa del dolor postoperatorio",
   "Recuperación más rápida y confortable",
-  "Menor consumo de opioides y sus efectos secundarios",
+  "Control efectivo del dolor con plan adaptado a cada caso",
   "Movilización más temprana tras la cirugía",
   "Menor riesgo de dolor crónico postoperatorio",
   "Mejor calidad del sueño en el postoperatorio",

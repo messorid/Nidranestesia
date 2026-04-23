@@ -64,7 +64,28 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-3 mt-10 pt-8 border-t border-white/5">
+        {/* SEO links */}
+        <div className="mt-10 pt-8 border-t border-white/5">
+          <p className="text-[9px] tracking-[0.15em] uppercase text-slate-700 mb-3">Búsquedas frecuentes</p>
+          <div className="flex flex-wrap gap-x-4 gap-y-1.5">
+            {[
+              { label: "Analgesia en Barinas", href: "/analgesia-barinas" },
+              { label: "Sedaciones en Barinas", href: "/sedacion-barinas" },
+              { label: "Bomba de analgésicos en Barinas", href: "/bomba-analgesia-barinas" },
+              { label: "Bombas para el dolor en Barinas", href: "/bombas-dolor-barinas" },
+              { label: "Bombas de analgesia en Barinas", href: "/bombas-analgesia-barinas" },
+              { label: "Manejo del dolor en Barinas", href: "/manejo-dolor-barinas" },
+              { label: "Anestesiólogo en Barinas", href: "/anestesiologo-barinas" },
+              { label: "Anestesiólogo Venezuela", href: "/anestesiologo-venezuela" },
+            ].map(({ label, href }) => (
+              <a key={href} href={href} className="text-[10px] text-slate-700 hover:text-slate-500 transition-colors">
+                {label}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-3 mt-6 pt-6 border-t border-white/5">
           <p className="text-slate-700 text-[10px] tracking-wider">
             © 2026 Nidra Servicios Anestésicos. Barinas, Venezuela.
           </p>

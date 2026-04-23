@@ -22,7 +22,7 @@ const services = [
     image: "/analgesia.png",
     imageAlt: "Analgesia postoperatoria — Nidra",
     title: "Analgesia Postoperatoria",
-    desc: "Control efectivo del dolor tras la cirugía mediante técnicas multimodales: bloqueos nerviosos regionales, analgesia epidural e infusiones continuas. Una recuperación cómoda y segura con mínima dependencia de opioides.",
+    desc: "Control efectivo del dolor tras la cirugía mediante técnicas multimodales: bloqueos nerviosos regionales, analgesia epidural e infusiones continuas. Una recuperación cómoda, segura y adaptada a cada paciente.",
     tags: ["Bloqueos regionales", "Analgesia epidural", "Recuperación cómoda"],
   },
 ];

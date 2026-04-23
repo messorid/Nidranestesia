@@ -56,12 +56,12 @@ const services = [
     imageAlt: "Analgesia postoperatoria — Nidra Barinas",
     title: "Analgesia Postoperatoria",
     intro:
-      "El control del dolor después de una cirugía es parte esencial de la recuperación. En Nidra aplicamos técnicas analgésicas multimodales que minimizan el dolor, reducen la necesidad de opioides y permiten una recuperación más rápida y confortable.",
+      "El control del dolor después de una cirugía es parte esencial de la recuperación. En Nidra aplicamos técnicas analgésicas multimodales que minimizan el dolor y permiten una recuperación más rápida y confortable.",
     includes: [
       "Bloqueos nerviosos periféricos ecoguiados para analgesia localizada",
       "Analgesia epidural continua para procedimientos de abdomen y miembros inferiores",
       "Infusiones continuas de analgésicos adaptadas a cada paciente",
-      "Analgesia multimodal para minimizar el uso de opioides",
+      "Analgesia multimodal adaptada a cada procedimiento y paciente",
       "Seguimiento y evaluación del nivel de dolor en el postoperatorio",
       "Ajuste de dosis según la respuesta y evolución del paciente",
       "Coordinación con el equipo quirúrgico para un manejo integral",
