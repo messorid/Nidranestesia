@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { trackFormSubmit } from "../lib/gtag";
 
 const services = [
   "Valoración anestésica preoperatoria",
@@ -23,6 +24,7 @@ export default function ContactForm() {
     const text = encodeURIComponent(
       `Hola, los contacto desde la página web nidranestesia.com. Soy ${form.name}. ${serviceText}${form.message} Mi teléfono: ${form.phone}`
     );
+    trackFormSubmit();
     window.open(`https://wa.me/584245567249?text=${text}`, "_blank");
     setSent(true);
     setForm({ name: "", phone: "", service: "", message: "" });

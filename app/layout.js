@@ -1,6 +1,8 @@
 import { Inter, Cormorant_Garamond } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import Analytics from "./components/Analytics";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -80,6 +82,17 @@ export default function RootLayout({ children }) {
       <body className="min-h-screen antialiased">
         {children}
         <WhatsAppFloat />
+        <Analytics />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2ZQMWNSVW1"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2ZQMWNSVW1');
+        `}</Script>
       </body>
     </html>
   );
